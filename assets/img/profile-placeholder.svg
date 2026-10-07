@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f0fe" />
+      <stop offset="100%" stop-color="#d2e3fc" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="20" fill="url(#bgGrad)" />
+  <rect x="2" y="2" width="396" height="396" rx="18" fill="none" stroke="#0b57d0" stroke-width="2" stroke-dasharray="6,6" opacity="0.4" />
+  
+  <!-- Silhouette Icon -->
+  <circle cx="200" cy="150" r="55" fill="#0b57d0" opacity="0.3" />
+  <path d="M 110 300 C 110 230, 290 230, 290 300 Z" fill="#0b57d0" opacity="0.3" />
+  
+  <!-- Text Helper -->
+  <text x="200" y="340" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#0b57d0" text-anchor="middle">
+    Ganti dengan Foto Profil Anda
+  </text>
+  <text x="200" y="360" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#57606a" text-anchor="middle">
+    assets/img/profile.jpg
+  </text>
+</svg>

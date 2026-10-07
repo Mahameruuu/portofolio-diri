@@ -271,6 +271,52 @@ p:last-child {
   background-color: var(--primary-blue);
 }
 
+.nav-right-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  order: 2;
+}
+
+/* Language Switcher Button */
+.lang-switch-wrapper {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--blue-subtle);
+  border: 1px solid var(--blue-border);
+  padding: 4px 8px;
+  border-radius: 20px;
+  gap: 6px;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 12px;
+  transition: var(--transition);
+  line-height: 1.2;
+}
+
+.lang-btn:hover {
+  color: var(--primary-blue);
+}
+
+.lang-btn.active {
+  background-color: var(--primary-blue);
+  color: var(--pure-white);
+}
+
+.lang-divider {
+  font-size: 0.75rem;
+  color: var(--blue-border);
+  user-select: none;
+}
+
 .nav-toggle {
   display: none;
   background: none;
@@ -315,8 +361,49 @@ p:last-child {
   border-bottom: 1px solid var(--blue-border);
 }
 
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
 .hero-content {
-  max-width: 820px;
+  flex: 1;
+  max-width: 650px;
+}
+
+.hero-image-wrapper {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-card {
+  width: 290px;
+  height: 290px;
+  border-radius: 20px;
+  background-color: var(--pure-white);
+  border: 2px solid var(--blue-border);
+  box-shadow: var(--shadow-md);
+  padding: 10px;
+  position: relative;
+  transition: var(--transition);
+}
+
+.hero-image-card:hover {
+  border-color: var(--primary-blue);
+  box-shadow: 0 8px 24px rgba(11, 87, 208, 0.15);
+  transform: translateY(-3px);
+}
+
+.hero-profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
 }
 
 .hero .badge {
@@ -920,6 +1007,29 @@ p:last-child {
    RESPONSIVE DESIGN
    ========================================================================== */
 @media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 36px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .hero-meta {
+    margin: 0 auto;
+  }
+
+  .hero-image-card {
+    width: 220px;
+    height: 220px;
+  }
+
   .hero-title {
     font-size: 2.2rem;
   }
@@ -966,15 +1076,6 @@ p:last-child {
     display: block;
     width: 100%;
     text-align: center;
-  }
-
-  .nav-action {
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-action .btn {
-    width: 100%;
   }
 
   .hero {
